@@ -1,0 +1,446 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    position: absolute;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.card:nth-child(1) {
+    background: #ff4342;
+    left: 15%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.card:nth-child(2) {
+    background: #3fdbf7;
+    left: calc(10% + 40px);
+    top: calc(40% + 40px);
+    transform: translate(-50%, -50%) scale(0.95);
+    z-index: 4;
+}
+
+.card:nth-child(3) {
+    background: #fe96ae;
+    stroke-width: "3";
+    left: calc(10% + 80px);
+    top: calc(50% + 80px);
+    transform: translate(-50%, -50%) scale(0.9);
+    z-index: 3;
+}
+
+.card:nth-child(4) {
+    background: #45f288;
+    left: calc(20%);
+    top: calc(80% + 120px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 2;
+}
+
+.card:nth-child(5) {
+    background: #6ba2c0;
+    stroke: #333;
+    left: calc(50%);
+    top: calc(40% + 150px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(6) {
+    background: #fff04b;
+    stroke: #333;
+    left: calc(30%);
+    top: calc(75%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(7) {
+    background: #fff04b;
+    stroke: #333;
+    left: calc(50% + 150px);
+    top: calc(70% + 150px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(8) {
+    background: #ff5858;
+    stroke: #333;
+    left: calc(70% + 150px);
+    top: calc(50% + 150px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(9) {
+    background: #ff4342;
+    stroke: #333;
+    left: calc(80%);
+    top: calc(90%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(10) {
+    background: #45fe76;
+    stroke: #333;
+    left: calc(60%);
+    top: calc(10%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(11) {
+    background: #fe96ae;
+    stroke: #333;
+    left: calc(39%);
+    top: calc(89%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(12) {
+    background: #ff4342;
+    stroke: #333;
+    left: calc(65% + 150px);
+    top: calc(80%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(13) {
+    background: #61dfff;
+    stroke: #333;
+    left: calc(95%);
+    top: calc(50% + 150px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(14) {
+    background: #fff04b;
+    stroke: #333;
+    left: calc(85%);
+    top: calc(15%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(15) {
+    background: #e070fe;
+    stroke: #333;
+    left: calc(70%);
+    top: calc(30%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+
+.card:nth-child(16) {
+    background: #5b84ff;
+    stroke: #333;
+    left: calc(40%);
+    top: calc(15%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 3;
+}
+
+.card:nth-child(17) {
+    background:#fe96ae;
+    stroke: #333;
+    left: calc(75%);
+    top: calc(45%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(18) {
+    background: #5b84ff;
+    stroke: #333;
+    left: calc(40%);
+    top: calc(40%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(19) {
+    background: #89ed7f;
+    stroke: #333;
+    left: calc(25%);
+    top: calc(35%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(20) {
+    background: #e070fe;
+    stroke: #333;
+    left: calc(40%);
+    top: calc(65%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(21) {
+    background: #fe96ae;
+    stroke: #333;
+    left: calc(95%);
+    top: calc(40%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(22) {
+    background: #94adeb;
+    stroke: #333;
+    left: calc(90%);
+    top: calc(20%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(23) {
+    background: #69ff4b;
+    background:;
+    stroke: #333;
+    left: calc(70%);
+    top: calc(10%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+
+
+.card:nth-child(24) {
+    background: #fff04b;
+    left: 12%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.card:nth-child(25) {
+    background: #1ac0e9;
+    left: calc(40%);
+    top: calc(80%);
+    transform: translate(-50%, -50%) scale(0.95);
+    z-index: 3;
+}
+
+.card:nth-child(26) {
+    background: #fff04b;
+    stroke-width: "3";
+    left: calc(65%);
+    top: calc(50%);
+    transform: translate(-50%, -50%) scale(0.9);
+    z-index: 3;
+}
+
+.card:nth-child(27) {
+    background: #5b84ff;
+    left: calc (25%);
+    top: calc(75% + 120px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 2;
+}
+
+.card:nth-child(28) {
+    background: #5b84ff;
+    stroke: #333;
+    left: calc(80%);
+    top: calc(100%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(29) {
+    background: #e070fe;
+    stroke: #333;
+    left: calc(85%);
+    top: calc(65%);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+.card:nth-child(30) {
+    background: #fe96ae;
+    stroke: #333;
+    left: calc(40% + 150px);
+    top: calc(90% + 150px);
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card.active {
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card.dragging {
+    transition: none;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+.card-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    cursor: grab;
+}
+
+.card.dragging .card-handle {
+    cursor: grabbing;
+}
+
+.audio-player {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: auto;
+    z-index: 11;
+    position: relative;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 15px;
+}
+
+.play-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+       
+.progress-container {
+    flex-grow: 1;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #333;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+.time {
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 85%;
+        min-height: 350px;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        }
+
+    .card p {
+        font-size: 1rem;
+        }
+}
+    

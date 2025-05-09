@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+    background-color: #000000; 
+    font-family: 'Arial', sans-serif;
+    cursor: default;
+}
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+canvas {
+    display: block;
+}
+
+#info {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    text-shadow: 0 0 5px rgba(0, 128, 255, 0.8);
+    z-index: 10;
+}
+#particle-info {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    text-shadow: 0 0 5px rgba(255, 128, 0, 0.8);
+    z-index: 10;
+}
+
+#text-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 128, 255, 0.5);
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#modal-content {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#modal-content strong {
+    color: #4db8ff;
+}
+
+#explore-button {
+    background: #4db8ff;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
